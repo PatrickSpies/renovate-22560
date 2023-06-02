@@ -1,0 +1,12 @@
+repositories:
+  - name: k8s-as-helm
+    url: https://ameijer.github.io/k8s-as-helm/
+
+releases:
+
+  - name: rbac
+    chart: k8s-as-helm/serviceaccount
+    version: 1.0.0
+    dependencies:
+      - chart: k8s-as-helm/clusterrolebinding
+        version: 1.0.0
